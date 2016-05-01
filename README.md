@@ -1,7 +1,7 @@
 # django_demo
-This project is a simple web application using django framework.
-Python version : 2.7
-Data base using : SQLite
+This project is a simple web application using django framework.  
+ -Python version : 2.7  
+ -Data base using : SQLite
 
 Project consist of 2 app:
  + polls: tutorial of django
