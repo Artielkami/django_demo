@@ -1,10 +1,9 @@
-from django.shortcuts import render
-from django.http import Http404
 from django.http import HttpResponse
-from django.http import HttpResponseRedirect
 from django.template import loader
+
 from .models import Ticket
-import json
+
+
 # Create your views here.
 
 
@@ -28,4 +27,3 @@ def domestic(request):
     # return HttpResponse(output)
     return HttpResponse(template.render(context, request))
 # def get_ticket(request, query_json):
-#

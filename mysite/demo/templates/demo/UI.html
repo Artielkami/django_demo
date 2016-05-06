@@ -36,7 +36,7 @@
     </header>
     <div class="container main">
         <!-- form se duoc gui thong qua ajax -->
-        <form id="myForm">
+        <!-- <form id="myForm">
             <div class="row">
                 <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <label class="control-label" for="from">From:</label>
@@ -75,7 +75,17 @@
             <div class="row center-block text-center">
                 <button type="submit" class="btn btn-success btn-my-search-style" id="search" name="search">Search</button>
             </div>
-        </form>
+        </form> -->
+        <div class="div-panel">
+            <marquee> THIS IS SPARTA</marquee>
+        </div>
+        <div id="list-way">
+            {% if way_list %}
+                
+            {% else %}
+            <p> Something wrong, go back and JOHN CENA</p>
+            {% endif %}
+        </div>
         <div id="result">
             {% if ticket_list %}
             <p class="rs-title">Kết quả</p>
