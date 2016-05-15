@@ -2,14 +2,17 @@
 # -*- coding: utf-8 -*-
 from django.http import HttpResponse
 from django.template import loader
-
+from django.shortcuts import render_to_response, render, redirect
 from .models import Ticket
-
+from .forms import Search
 
 # Create your views here.
 
 
 def index(request):
+    if request.method == 'GET':
+        search_form = Search(request.GET)
+
     ticket_list = Ticket.objects.order_by('-day')
     template = loader.get_template('demo/UI.html')
     context = {

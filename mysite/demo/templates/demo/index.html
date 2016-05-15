@@ -42,7 +42,7 @@
             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <label class="control-label" for="from">From:</label>
                 <!--<input type="text" class="form-control" id="from" name="from" placeholder="Location...">-->
-                <select name="departure_port_code" id="from" class="form-control">
+                <select name="departure_port" id="from" class="form-control">
                     <option class="pickFlightStart" value="" style="text-align: center">-- Please choose place --</option>
                     <option class="pickFlightStart" value="BMV"> Buôn Ma Thuột (BMV)</option>
                     <option class="pickFlightStart" value="DAD"> Đà Nẵng (DAD)</option>
@@ -70,7 +70,7 @@
             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <label class="control-label" for="to">To:</label>
                 <!--<input type="text" class="form-control" id="to" name="to" placeholder="Location...">-->
-                <select name="departure_port_code" id="to" class="form-control">
+                <select name="arrival_port" id="to" class="form-control">
                     <option class="pickFlightStart" value="" style="text-align: center">-- Please choose place --</option>
                     <option class="pickFlightStart" value="BMV"> Buôn Ma Thuột (BMV)</option>
                     <option class="pickFlightStart" value="DAD"> Đà Nẵng (DAD)</option>
@@ -95,28 +95,28 @@
                     <option class="pickFlightStart" value="CAH"> Cà Mau (CAH)</option>
                 </select>
             </div>
-            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <label class="control-label" for="price">Way:</label>
-                <select class="form-control" id="price" name="price">
-                    <option value="ascending">One Way (Một chiều)</option>
-                    <option value="descending">Turn Back (Hai chiều)</option>
+            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4" id="div-way">
+                <label class="control-label" for="way">Way:</label>
+                <select class="form-control" id="way" name="way" onchange="rt_show()">
+                    <option value="1">One Way (Một chiều)</option>
+                    <option value="2">Turn Back (Hai chiều)</option>
                 </select>
             </div>
             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <label class="control-label" for="stops">Stops:</label>
                 <select class="form-control" id="stops" name="stops">
-                    <option value="null">Any</option>
-                    <option value="0">Nonstop</option>
-                    <option value="1">Up to 1 stop</option>
-                    <option value="2">Up to 2 stops</option>
+                    <option value="0">Any</option>
+                    <option value="1">Nonstop</option>
+                    <option value="2">Up to 1 stop</option>
+                    <option value="3">Up to 2 stops</option>
                 </select>
             </div>
 
             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <label class="control-label" for="outbound">Outbound time:</label>
-                <input type="date" class="form-control" id="outbound" name="outbound" placeholder="Date...">
+                <input type="date" class="form-control" id="outbound" name="goday" placeholder="Date...">
             </div>
-            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4" id="div-return">
                 <label class="control-label" for="return">Return time:</label>
                 <input type="date" class="form-control" id="return" name="return" placeholder="Date...">
             </div>
@@ -134,6 +134,10 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
+                    <option value="11">10</option>
+                    <option value="12">10</option>
+                    <option value="13">10</option>
+                    <option value="14">10</option>
                 </select>
             </div>
             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -209,8 +213,16 @@
 </footer>
 <script type="text/javascript">
     $(document).ready(function () {
-        test()
+        test();
+
     });
+    function rt_show() {
+        if($('#price').val() == 'ascending'){
+            $('#div-return').css('visibility', 'hidden');
+        } else {
+            $('#div-return').css('visibility', 'visible');
+        }
+    }
     function test() {
         var d = new Date();
         var day = d.getDate() + 1;
