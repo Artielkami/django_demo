@@ -5,46 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28b12c87-043f-49b9-964d-a3df64be9a82" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/migrations/0002_auto_20160501_1137.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/migrations/0003_ticket_date_created.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/migrations/0004_auto_20160501_1148.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/migrations/0005_auto_20160501_1149.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/static/demo/images/can.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/static/demo/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/static/demo/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/templates/demo/UI.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/templates/demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/templatetags/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/templatetags/get2_extras.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/demo/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/manage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/mysite/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/mysite/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/templates/polls/detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/templates/polls/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/templates/polls/results.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/polls/views.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django_demo.iws" />
@@ -527,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463343612595</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-----------------------------&#10;Update 1.2.3&#10;&#10;- Update Interface&#10;- Add some record&#10;- Add something new&#10;&#10;----------------------------">
+      <created>1463345746892</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1463345746892</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
