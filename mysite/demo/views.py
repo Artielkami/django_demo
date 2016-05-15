@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from django.http import HttpResponse
 from django.template import loader
 
@@ -13,12 +15,13 @@ def index(request):
     context = {
         'item_list': ticket_list,
     }
+
     # output = ', '.join([q.question_text for q in latest_question_list])
     # return HttpResponse(output)
     return HttpResponse(template.render(context, request))
 
 def domestic(request):
-    ticket_list = Ticket.objects.order_by('-price')[:5]
+    ticket_list = Ticket.objects.order_by('price')[:5]
     template = loader.get_template('demo/index.html')
     context = {
         'item_list': ticket_list,

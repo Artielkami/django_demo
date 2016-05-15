@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load get2_extras %}
 <html lang="en">
 <head>
     <title>Domestic flight</title>
@@ -177,16 +178,16 @@
                         <th class="th-ticket-type">Loại vé</th>
                         <th class="th-sit-type">Loại ghế</th>
                         <th class="th-carrier">Hãng</th>
-                        <th class="price">Giá (VND)</th>
+                        <th class="price">Giá (1000 VND)</th>
                         <th class="th-place">Đặt vé</th>
                     </tr>
                     {% for ticket in item_list %}
                     <tr class="tr-tik">
-                        <td>{{ ticket.time }}</td>
-                        <td>{{ ticket.day }}</td>
+                        <td>{{ ticket.departure_time.time }}</td>
+                        <td>{{ ticket.departure_time.date }}</td>
                         <td>{{ ticket.departure_port }}</td>
                         <td>{{ ticket.arrival_port }}</td>
-                        <td>{{ ticket.ticket_type}}</td>
+                        <td>{{ ticket.ticket_type|ticket_type}}</td>
                         <td>{{ ticket.sit_class}}</td>
                         <td>{{ ticket.carrier }}</td>
                         <td>{{ ticket.price}}</td>
